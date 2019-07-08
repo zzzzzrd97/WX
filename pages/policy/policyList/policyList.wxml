@@ -1,0 +1,28 @@
+<!-- /*头部导航*/ -->
+<view class='navBox'>
+  <navigator class='navItem {{pid===1?"active":""}}' bindtap='handleTypeChange' data-pid="{{1}}">
+    政策法规    
+  </navigator>
+  <navigator class='navItem {{pid===2?"active":""}}' bindtap='handleTypeChange' data-pid="{{2}}">
+    扶持类型
+  </navigator>
+  <navigator class='navItem {{pid===3?"active":""}}' bindtap='handleTypeChange' data-pid="{{3}}">
+    办理指导
+  </navigator>
+</view>
+<!-- 导航结束 -->
+<view class="containerBox">
+  <!-- 新闻通知开始 -->
+  <view class="container">
+  <!-- 第一块 -->
+    <navigator url="../policyShow/policyShow?id={{item.id}}" class='container-inform' wx:for="{{policyList}}" wx:key="{{item.id}}">
+      <image src='{{url+item.thumb}}'></image>
+      <view class='text'>
+        {{item.title}}
+      </view>
+    </navigator>
+  </view>
+</view>
+
+
+

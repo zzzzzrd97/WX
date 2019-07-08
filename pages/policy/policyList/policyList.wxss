@@ -1,0 +1,75 @@
+/* pages/policy/policyList/policyList.wxss */
+/* 头部导航 */
+.navBox{
+  width: 750rpx;
+  height: 124rpx;
+  background: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 108rpx;
+  margin-bottom: 24rpx;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.navItem{
+  font-size: 26rpx;
+  color: #abacb4;
+  font-weight:bold;
+  position:relative;
+}
+.navBox navigator.active{
+  color: #2b2f4c;
+}
+.navBox navigator.active::after{
+  width:34rpx;
+  height:4rpx;
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;right:0;
+  bottom:-12rpx;
+  margin:0 auto;
+  background:gold;
+}
+/* <!-- 新闻通知开始 --> */
+
+.containerBox{
+  width: 100%;
+  height: auto;
+  padding-top: 124rpx;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0;
+}
+/* 包含图片文本的Box */
+.container-inform{
+  width: 702rpx;
+  height: 178rpx;
+  background: white;
+  box-shadow: 0 0 12rpx rgba(229,229,229,0.75);
+  border-radius: 10rpx;
+  margin-bottom: 25rpx;
+}
+/* 左侧图片 */
+image{
+  margin: 25rpx 30rpx 25rpx 25rpx;
+  width: 194rpx;
+  height: 125rpx;
+  float: left;
+}
+/* 右侧文本 */
+.text{
+  width: 445rpx;
+  height: 125rpx;
+  color: #abacb4;
+  font-size: 24rpx;float: left;
+  margin-top: 33rpx;
+  margin-left: 5rpx;
+  line-height: 37rpx;
+}

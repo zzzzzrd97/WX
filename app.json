@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/policy/policyList/policyList",
+    "pages/science/scienceIndex/scienceIndex",
+    "pages/active/activeList/activeList",
+    "pages/company/companyIndex/companyIndex",
+    "pages/policy/policyShow/policyShow",
+    "pages/company/applyResult/applyResult",
+    "pages/company/judgeResult/judgeResult",
+    "pages/company/planShow/planShow"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2c304c",
+    "navigationBarTitleText": "科技局小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7c7c7c",
+    "selectedColor": "#2c304c",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/policy/policyList/policyList",
+        "text": "政策",
+        "iconPath": "images/policy.png",
+        "selectedIconPath": "images/policy-active.png"
+      },
+      {
+        "pagePath": "pages/company/companyIndex/companyIndex",
+        "text": "企业",
+        "iconPath": "images/company.png",
+        "selectedIconPath": "images/company-active.png"
+      },
+      {
+        "pagePath": "pages/science/scienceIndex/scienceIndex",
+        "text": "科研",
+        "iconPath": "images/science.png",
+        "selectedIconPath": "images/science-active.png"
+      },
+      {
+        "pagePath": "pages/active/activeList/activeList",
+        "text": "活动",
+        "iconPath": "images/active.png",
+        "selectedIconPath": "images/active-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

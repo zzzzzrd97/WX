@@ -1,0 +1,16 @@
+<!--pages/company/judgeResult/judgeResult.wxml-->
+<!-- 内容列表开始 -->
+<block wx:if="{{state===1}}">
+<view class='section'>
+  <view class='sectionList' wx:for="{{applyList}}" wx:key="{{item.id}}">
+    <view class='sectionTxtBox'>
+      <text class='titleTxt'>已经申请的项目名称</text>
+      <view class='sectionTip {{item.state===2?"active":""}} {{item.state===1?"widthColor":""}} {{item.state===3?"dangerColor":""}}'>{{item.msg}}           </view>
+      <text class='iconfont icon-xiangyou icon-font'></text>
+    </view>
+    <text class="contentTxt">{{item.time}}</text>
+  </view>
+  </view>
+</block>
+<!-- 内容列表结束 -->
+

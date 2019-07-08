@@ -1,0 +1,41 @@
+/* pages/policy/policyShow/policyShow.wxss */
+/* 大标题 */
+.bigTitle{
+  font-size: 44rpx;
+  color: #4a4c58;
+  margin-left: 69rpx;
+  margin-top: 77rpx;
+}
+/* 小标题 */
+.smallTitle{
+  font-size: 28rpx;
+  color: #a5a6af;
+  margin:45rpx 0 45rpx 69rpx;
+}
+/* 段落部分 */
+.duanluo{
+  width: 626rpx;
+  font-size: 24rpx;
+  color: #6a6c7c;
+  font-weight:bold;
+  display: block;
+  margin: 0 auto;
+}
+/* 官方网址标题部分 */
+image{
+  display: block;
+  width: 508rpx;
+  height: 272rpx;
+  margin: 54rpx auto 30rpx auto;
+  /* margin-top: 54rpx; */
+}
+/* 图片下方文字部分 */
+.lastDuanluo{
+  width: 626rpx;
+  font-size: 26rpx;
+  color: #6a6c7c;
+  display: block;
+  font-weight:bold;
+  margin-left: 69rpx;
+  margin-top: 20rpx;
+}

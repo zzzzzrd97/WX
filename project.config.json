@@ -1,0 +1,90 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.0",
+	"appid": "wx2e99991bcec0fa15",
+	"projectname": "app",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "policyShow",
+					"pathName": "pages/policy/policyShow/policyShow",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "policyShow",
+					"pathName": "pages/policy/policyShow/policyShow",
+					"query": "id=28",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "company",
+					"pathName": "pages/company/companyIndex/companyIndex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activityList",
+					"pathName": "pages/active/activeList/activeList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "applyResult",
+					"pathName": "pages/company/applyResult/applyResult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "science",
+					"pathName": "pages/science/scienceIndex/scienceIndex",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

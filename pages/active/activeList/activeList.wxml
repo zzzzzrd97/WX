@@ -1,0 +1,54 @@
+<!--pages/active/activeList/activeList.wxml-->
+<!-- 导航栏开始 -->
+<view class="nav">
+<view class="navContainer">
+    <view class='navBtn {{category===1?"active":""}}' bindtap='handleChange' data-id="{{1}}">
+        动态信息
+    </view>
+    <view class="navSpan"></view>
+    <view class='navBtn {{category===2?"active":""}}' bindtap='handleChange' data-id="{{2}}">
+        活动主题
+    </view>
+</view>
+</view>
+<!-- 导航栏结束 -->
+<block wx:if="{{category===1}}">
+<!-- 内容列表开始 -->
+<view class='section'>
+  <navigator class='sectionList'>
+    <view class='sectionTxtBox'>
+      <text class='titleTxt'>省科技厅召开严肃行政审批窗口</text>
+      <text class='iconfont icon-xiangyou icon-font'></text>
+    </view>
+    <text class="contentTxt">2018-10-24</text>
+  </navigator>
+  <navigator class='sectionList marginTop32'>
+    <view class='sectionTxtBox'>
+      <text class='titleTxt'>工作人员纪律专题会议</text>
+      <text class='iconfont icon-xiangyou icon-font'></text>
+    </view>
+    <text class="contentTxt">2018-10-24</text>
+  </navigator>
+  <navigator class='sectionList marginTop32'>
+    <view class='sectionTxtBox'>
+      <text class='titleTxt'>省科技厅召开严肃行政审批窗口</text>
+      <text class='iconfont icon-xiangyou icon-font'></text>
+    </view>
+    <text class="contentTxt">2018-10-24</text>
+  </navigator>
+</view>
+<!-- 内容列表结束 -->
+</block>
+<block wx:if="{{category===2}}">
+<view class='main'>
+  <view class='mainBox' wx:for="{{activeList}}" wx:key="{{item.id}}">
+    <view class='mainBoxTop'>
+      <text class='titleTxt'>{{item.title}}</text>
+      <text class='iconfont icon-xiangyou icon-font'></text>
+    </view>
+    <text class='contentTxt'>{{item.time}}</text>
+    <image src='{{url+item.thumb}}'></image>
+  </view>
+</view>
+</block>
+<!-- 内容结束 -->

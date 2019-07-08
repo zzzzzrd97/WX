@@ -1,0 +1,75 @@
+@import "../../../css/iconfont.wxss";
+/* 内容列表开始 */
+.section{
+  width:750rpx;
+  height:472rpx;
+}
+.sectionList{
+  width:702rpx;
+  margin:0 auto;
+  height:136rpx;
+  background:#fff;
+  border-radius:5rpx;
+  box-shadow:0 1rpx 4rpx rgba(229,229,229,0.75);
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.marginTop32{
+  margin-top:32rpx;
+}
+.sectionTxtBox{
+  width:630rpx;
+  height:42rpx;
+  margin-left:48rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.icon-font{
+  font-size:22rpx;
+  color:rgba(0,0,0,0.3);
+}
+.sectionTip{
+  width:75rpx;
+  height:36rpx;
+  border-radius:18rpx;
+  font-size:22rpx;
+  text-align:center;
+  line-height:36rpx;
+  font-weight:bold;
+  margin-left:254rpx;
+  color:rgba(44,48,76,0.5);
+  background:rgb(226,226,226);
+}
+.sectionTxtBox view.active{
+   width:99rpx;
+  background:rgb(32,200,187);
+  color:#fff;
+}
+.widthColor{
+  width:99rpx;
+  background:rgb(253,171,62);
+  color:#fff;
+}
+.dangerColor{
+  width:99rpx;
+  background:red;
+  color:#fff;
+}
+.titleTxt{
+  font-size:26rpx;
+  letter-spacing: 1rpx;
+  font-weight:bold;
+}
+.contentTxt{
+  width:630rpx;
+  height:42rpx;
+  padding-top:12rpx;
+  margin-left:48rpx;
+  font-size:26rpx;
+  letter-spacing:0;
+  font-weight:400;
+  color:rgba(74,76,87,0.5);
+}
+/* 内容列表结束 */

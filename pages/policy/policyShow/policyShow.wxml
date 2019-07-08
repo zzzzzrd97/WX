@@ -1,0 +1,19 @@
+<!-- 大标题 -->
+<view class='bigTitle'>
+  {{policyData.title}}
+</view>
+<!-- 小标题 -->
+<view class='smallTitle'>
+{{policyData.type}}
+</view>
+<!-- 段落部分 -->
+  <rich-text class='duanluo' nodes="{{policyData.content}}">
+  </rich-text>
+  <!-- 图片部分 -->
+  <image src='{{url+policyData.thumb}}'>
+  </image>
+
+  <!-- 图片下方文本部分 -->
+<text class='lastDuanluo'>
+来源:{{policyData.source}}
+</text>

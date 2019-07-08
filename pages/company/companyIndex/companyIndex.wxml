@@ -1,0 +1,173 @@
+<!--pages/company/companyIndex/companyIndex.wxml-->
+<view wx:if="{{!login}}">
+  <!-- 头部开始 -->
+  <view class='header'>
+    <image src='../../../images/bg1.png'></image>
+  </view>
+  <view class='headImage'>
+    <image src='../../../images/loginHeader.png'></image>
+  </view>
+  <!-- 头部结束 -->
+  <!-- 内容开始 -->
+  <view class='container'>
+    <view class='containerBox'>
+      <image src='../../../images/user.png'></image>
+      <input type='text' placeholder='请输入完整的企业名称' placeholder-style='color:rgba(56,63,105,0.5);' bindblur="handleName" />
+    </view>
+    <view class='containerBox'>
+      <image src='../../../images/password.png'></image>
+      <input type='text' placeholder='请输入密码' placeholder-style='color:rgba(56,63,105,0.5);'  password="{{true}}" bindblur='handlePassword'/>
+    </view>
+  </view>
+  <!-- 内容结束 -->
+  <!-- 底部按钮开始 -->
+  <view class='footer'>
+    <view class='footerBtn' bindtap='handleSubmit'>登录</view>
+  </view>
+  </view>
+<!-- 登录界面结束 -->
+<!-- 企业界面开始 -->
+<view wx:else>
+<!-- 导航开始 -->
+<view class="navBox" bindtap='bigClick'>
+  <view class="navItem {{category===1?'active':''}}"  data-id="{{1}}">企业信息</view>
+  <view class="slip">|</view>
+  <view class="navItem {{category===2?'active':''}}"  data-id="{{2}}">知识产权</view>
+  <view class="slip">|</view>
+  <view class="navItem {{category===3?'active':''}}"  data-id="{{3}}">设计方案</view>
+  <view class="navItem {{category===4?'active':''}}"  data-id="{{4}}">需求方案</view>
+  <view class="slip">|</view>
+  <view class="navItem {{category===5?'active':''}}"  data-id="{{5}}">技术需求</view>
+  <view class="slip">|</view>
+  <view class="navItem {{category===6?'active':''}}" data-id="{{6}}">设备共享</view>
+</view>
+<!-- 导航结束 -->
+<block  wx:if="{{category===1}}">
+<view class='list'>
+  <view class='text-title'>
+    <text >{{data1.name}}</text>
+  </view>
+  <view  class='text-title2'>
+    <text>企业简介</text>
+  </view>
+  <view class='text-content'>
+    <text>{{data1.description}}</text>
+  </view>
+  <view class='department'>
+    <text>联系方式：{{data1.contact}}</text>
+  </view>
+</view>
+<view class='btn-lookMore'>
+  查看更多
+</view>
+</block>
+<block wx:elif="{{category===2}}">
+<view class='list2'>
+  <navigator url="../applyResult/applyResult">
+      <text class='text'>查看申请结果</text>
+      <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+  </navigator>
+</view>
+<view class='list2'>
+  <navigator url="../judgeResult/judgeResult">
+      <text class='text'>查看评估结果</text>
+      <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+  </navigator>
+</view>
+</block> 
+<block wx:elif="{{category===3}}">
+<!-- 列表开始 -->
+<view class='list3'>
+      <view class='imgBox'>
+        <image src='../../../images/icon-yellow.png'></image>
+      </view>
+      <text class='text'>定制方案</text>
+      <view class='desc'>付费</view>
+      <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+</view>
+<view class='list3' wx:for="{{data3}}" wx:key="{{item.id}}" bindtap='toDetailPage' data-id="{{item.id}}">
+      <view class='imgBox'>
+        <image src='../../../images/icon-blue.png'></image>
+      </view>
+      <text class='text'>{{item.name}}</text>
+      <!-- <view class='desc'>{{itemState[item.state]}}</view> -->
+      <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+</view>
+</block>
+<block wx:elif="{{category===4}}">
+<!-- 列表开始 -->
+<view class='list3'>
+      <view class='imgBox'>
+        <image src='../../../images/icon-yellow.png'></image>
+      </view>
+      <text class='text'>需求方案</text>
+      <view class='desc'>付费</view>
+      <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+</view>
+<view class='list3' wx:for="{{data4}}" wx:key="{{item.id}}" bindtap='toDetailPage' data-id="{{item.id}}">
+      <view class='imgBox'>
+        <image src='../../../images/icon-blue.png'></image>
+      </view>
+      <text class='text'>{{item.name}}</text>
+      <!-- <view class='desc'>{{itemState[item.state]}}</view> -->
+      <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+</view>
+</block>
+<block wx:elif="{{category===5}}">
+<!-- 列表开始 -->
+<view class='list3' bindtap='handleMyComShow'>
+    <view class='imgBox'>
+      <image src='../../../images/icon-green.png'></image>  
+  </view>
+  <text class='text'>本公司发布</text>
+  <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+</view>
+
+<view class='list3' wx:if="{{data5_my_show}}" wx:for="{{data5_my}}" wx:key="{{item.id}}">
+  <navigator>
+      <view class='imgBox'>
+          <image src='../../../images/icon-build.png'></image>
+      </view>
+      <text class='text'>{{item.name}}</text>
+      <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+  </navigator>
+</view>
+
+<view class='list3' wx:for="{{data5}}" wx:key="{{item.id}}">
+  <navigator>
+      <view class='imgBox'>
+          <image src='../../../images/icon-build.png'></image>
+      </view>
+      <text class='text'>{{item.name}}</text>
+      <view class='desc'>{{item.pay===0?"未付费":"已付费"}}</view>
+      <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+  </navigator>
+</view>
+<!-- 列表结束 -->
+</block>
+<block wx:elif="{{category===6}}">
+<!-- 列表开始 -->
+<view class='list3'>
+  <navigator>
+    <view class='imgBox'>
+      <image src='../../../images/icon-green.png'></image>  
+  </view>
+  <text class='text'>已发布</text>
+  <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+  </navigator>
+</view>
+<view class='list3'>
+  <navigator>
+      <view class='imgBox'>
+          <image src='../../../images/icon-build.png'></image>
+      </view>
+      <text class='text'>企业一</text>
+      <view class='desc'>付费</view>
+      <view class='icon'><text class='iconfont icon-xiangyou icon-font'></text></view>
+  </navigator>
+</view>
+<!-- 列表结束 -->
+</block>
+</view>
+<!-- 列表结束 -->
+

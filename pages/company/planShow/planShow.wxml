@@ -1,0 +1,49 @@
+<!-- 项目需求信息栏开始-->
+<view class="information-box">
+  <view class="information-list">
+    <text class="info-title">{{detailMessage.name}}</text>
+    <view class="lb">紧急</view>
+    <view class="list-items">
+      <view class="item">
+         <view class="item-tag"></view>
+         <view class="item-container">需求单位：<text class="item-text-special">{{detailMessage.companyname}}</text></view>
+      </view>
+      <view class="item">
+      <view class="item-tag"></view>
+         <view class="item-container">需求地址：<text class="item-text-special">山西省太原市迎泽区府西街128号</text></view>
+         </view>
+      <view class="item">
+      <view class="item-tag"></view>
+         <view class="item-container"><text class="item-container-special">联系</text>人：<text class="item-text-special">{{detailMessage.username}}</text></view>
+         </view>
+      <view class="item">
+      <view class="item-tag"></view>
+         <view class="item-container">电子邮箱：<text class="item-text-special">1536839@163.com</text></view>
+         </view>
+    </view>
+  </view>
+</view>
+<!-- 项目需求信息栏结束-->
+<!-- 项目描述开始-->
+<view class="requirement-box">
+  <view class="requirement-container">
+      <text class="requir-title">
+      需求描述
+      </text>
+      <text class="requir-container">
+     {{detailMessage.description}}
+      </text>
+  </view>
+</view>
+<!-- 项目描述结束-->
+<!-- 底部开始-->
+<view class="footer">
+  <view class="footer-container">
+  {{detailMessage.companyname}}
+  </view>
+  <view class="footer-container footer-date">
+  {{detailMessage.time}}
+  </view>
+</view>
+<!-- 底部结束-->
+

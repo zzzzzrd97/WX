@@ -1,0 +1,295 @@
+/* 头部开始 */
+.header{
+  width:750rpx;
+  height:506rpx;
+}
+.header>image{
+  width:100%;
+  height:100%;
+}
+.headImage{
+  width:182rpx;
+  height:182rpx;
+  border-radius:50%;
+  background-color:rgb(56,64,104);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin:0 auto;
+  margin-top:-91rpx;
+}
+.headImage>image{
+  width:166rpx;
+  height:166rpx;
+}
+/* 头部结束 */
+
+/* 内容开始 */
+.container{
+  width:702rpx;
+  margin:0 auto;
+  padding:0;
+  margin-top:64rpx;
+}
+.containerBox{
+  width:100%;
+  height:90rpx;
+  box-shadow: 0 1rpx 12rpx rgba(229,229,229,0.75);
+  display: flex;
+  align-items:center;
+  margin-top:27rpx;
+}
+.containerBox>image{
+  width:32rpx;
+  height:36rpx;
+  margin:0 45rpx;
+}
+.containerBox>input{
+  width: 100%;
+  height: 100%;
+  font-size:26rpx;
+  letter-spacing: 1rpx;
+  font-weight:bolder;
+}
+/* 内容结束 */
+
+/* 底部按钮开始 */
+.footer{
+  width:750rpx;
+  margin-top:115rpx;
+}
+.footerBtn{
+  width:702rpx;
+  height:90rpx;
+  margin:0 auto;
+  border-radius:4rpx;
+  background-color:rgb(56,64,104);
+  color:#fff;
+  font-size:32rpx;
+  text-align:center;
+  line-height:90rpx;
+  font-weight:bolder;
+  letter-spacing: 1rpx;
+}
+/* 底部按钮结束 */
+
+
+
+/* 顶部导航栏 */
+.navBox{
+  width: 750rpx;
+  padding-top:63rpx;
+  font-weight: bold;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: white;
+  z-index: 999;
+}
+.navContent{
+  width: 100%;
+  height: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cont1{
+  font-size: 26rpx;
+  line-height: 25rpx;
+  color:rgb(44, 48, 76);
+  opacity: 0.5;
+}
+.active{
+ opacity: 1!important;
+}
+.navCont-line{
+  width: 100%;
+  height: 100%;
+  margin-top:11rpx; 
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.line{
+  width: 34rpx;
+  height: 4rpx;
+  margin: 0 36.5rpx;
+  background: orange;
+  opacity: 0;
+}
+/* 内容部分 */
+.contentBox{
+  width: 100%;
+  height: auto;
+  margin-top:120rpx;
+  font-weight: bold;
+  padding-left: 30rpx;
+}
+.contentList{
+  box-shadow:0rpx 1rpx 16rpx 0rpx rgba(229, 229, 229, 0.75);
+  width: 90%;
+  height: 160rpx;
+  padding-top: 38rpx;
+  padding-left: 20rpx;
+  margin-bottom:30rpx; 
+  border-radius: 20rpx;
+}
+.imgBox{
+  width: 193rpx;
+  height: 126rpx;
+  float: left;
+}
+.imgBox>image{
+  width: 100%;
+  height: 100%;
+}
+.textBox{
+  width: 437rpx;
+  margin-left: 31rpx;
+  float: left;
+}
+.title{
+  font-size: 28rpx;
+  color: rgb(44,48,76);
+}
+.textCont{
+  display: block;
+  width: 436rpx;
+  height: 64rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 18rpx;
+  font-size: 24rpx;
+  opacity: 0.5;
+  letter-spacing: 1rpx;
+}
+
+
+/* 专家信息内容部分 */
+.expertContentBox{
+  margin-top: 120rpx;
+  width: 750rpx;
+  font-weight: bold;
+}
+.expertContentListCont{
+  width: 700rpx;
+  height: 154rpx;
+  margin: 0 auto;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.03);
+  position: relative;
+}
+.expertHeadImg{
+  width: 114rpx;
+  height: 114rpx;
+  float: left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.expertHeadImg>image{
+  width: 100%;
+  height: 100%;
+}
+.expertStudy{
+  display:block;
+  width: 95rpx;
+  height: 39rpx;
+  background: rgba(32, 200, 187,0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+  border-radius: 20rpx;
+  color: rgb(32, 200, 187);
+  font-size: 22rpx;
+  text-align: center;
+  line-height: 39rpx;
+}
+.expertIntroduce{
+  width: 349rpx;
+  height: 68rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 150rpx;
+  margin: auto 0;
+}
+.expertIntroduceTitle{
+  font-size: 28rpx;
+  color: rgb(74,76,87);
+}
+.expertIntroduceContent{
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  color: rgb(142,143,153);
+}
+.noBorder{
+  border: none;
+}
+
+/* 成果视频 */
+.projectVideo{
+  padding-top:120rpx;
+  width: 100%;
+}
+.projectVideoBox{
+  width: 702rpx;
+  height: 900rpx;
+  margin: 0 auto;
+}
+.projectVideoCont{
+  width: 100%;
+  height: 310rpx;
+  margin-bottom: 42rpx;
+  position: relative
+}
+.projectVideoCont>image{
+  width: 100%;
+  height: 100%;
+}
+.projectVideoIntroduce{
+  width: 100%;
+  height: 70rpx;
+  background:rgba(5, 5, 5, 0.5);
+  padding-left: 21rpx;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+}
+.projectVideoIntroduceText{
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 70rpx;
+  font-weight: bold;
+}
+/* 播放按钮 */
+.projectVideoPlay{
+  width: 70rpx;
+  height: 70rpx;
+  background: #fff;
+  border-radius:50%;
+  box-shadow: 1px 0 3px 4px rgba(255, 255, 255, 0.4); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.projectVideoPlayButton{
+  width: 0;
+  height: 0;
+  border: 15rpx solid transparent;
+  border-left-color: #ff9d29;
+  margin-top:20rpx;
+  margin-left: 30rpx; 
+}

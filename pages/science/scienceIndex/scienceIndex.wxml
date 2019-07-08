@@ -1,0 +1,72 @@
+<!-- 导航部分 -->
+<view class="navBox">
+  <view class="navContent">
+      <view class="cont1 {{state===1?'active':''}}" data-id="{{1}}" bindtap='changeState'>科研成果</view>
+      <view class="cont1 {{state===2?'active':''}}" data-id="{{2}}" bindtap='changeState'>专家信息</view>
+      <view class="cont1 {{state===3?'active':''}}" data-id="{{3}}" bindtap='changeState'>项目人才</view>
+      <view class="cont1 {{state===4?'active':''}}" data-id="{{4}}" bindtap='changeState'>成果视频</view>
+  </view>
+  <view class="navCont-line">
+      <view class="line {{state===1?'active':''}}"></view>
+      <view class="line {{state===2?'active':''}}"></view>
+      <view class="line {{state===3?'active':''}}"></view>
+      <view class="line {{state===4?'active':''}}"></view>
+  </view>
+</view>
+<!-- 内容部分 -->
+<block wx:if="{{state===1}}"> 
+<view class="contentBox">
+    <view class="contentList" wx:for="{{scienceData}}" wx:key="item.id">
+      <view class="imgBox">
+        <image src='{{url+item.uploadpath}}'></image>
+      </view>
+      <view class="textBox">
+        <text class="title">{{item.name}}</text>
+        <text class="textCont">{{item.description}}</text>
+      </view>
+    </view>
+</view>
+</block>
+<block wx:if="{{state===2}}">
+  <view class="expertContentBox">
+    <view class="expertContentListCont">
+      <view class="expertHeadImg">
+        <image src="../../../images/touxiang1.png"></image>
+      </view>
+      <view class="expertIntroduce">
+        <view class="expertIntroduceTitle">苏灿</view>
+        <view class="expertIntroduceContent">简介：高级技术员高级技术员</view>
+      </view>
+      <view class="expertStudy">研究生</view>
+    </view>
+</view>
+</block>
+<block wx:if="{{state===3}}">
+  <view class="expertContentBox">
+    <view class="expertContentListCont">
+      <view class="expertHeadImg">
+        <image src="../../../images/touxiang1.png"></image>
+      </view>
+      <view class="expertIntroduce">
+        <view class="expertIntroduceTitle">苏灿</view>
+        <view class="expertIntroduceContent">简介：高级技术员高级技术员</view>
+      </view>
+      <view class="expertStudy">研究生</view>
+    </view>
+</view>
+</block>
+<block wx:if="{{state===4}}">
+<view class="projectVideo">
+  <view class="projectVideoBox">
+    <view class="projectVideoCont">
+      <image src='../../../images/huoshan1.png'></image>
+      <view class="projectVideoIntroduce">
+        <text class="projectVideoIntroduceText">节能减排项目视频</text>
+      </view>
+       <view class="projectVideoPlay">
+        <view class="projectVideoPlayButton"></view>
+      </view>
+    </view>
+  </view>
+</view>
+</block>
